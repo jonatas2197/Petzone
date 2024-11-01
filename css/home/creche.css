@@ -1,0 +1,59 @@
+.creche {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  background-color: var(--cor-12);
+}
+
+.creche-h2 h2 {
+  margin-bottom: 40px;
+  margin-left: 180px;
+}
+
+.creche img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creche-conteudo {
+  padding: 80px;
+  align-self: start;
+}
+
+.creche-conteudo p {
+  font-weight: 500;
+  max-width: 42ch;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.creche-conteudo p:last-child {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+  .creche {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .creche-conteudo p:last-child {
+    margin-bottom: 10px;
+  }
+
+  .creche-h2 h2 {
+    margin-bottom: 15px;
+    margin-left: 25px;
+  }
+
+  .creche img {
+    max-height: 200px;
+  }
+
+  .creche-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+}
