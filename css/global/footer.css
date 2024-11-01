@@ -7,14 +7,15 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-redes {
+.footer-contato {
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -27,6 +28,5 @@
 @media (max-width: 600px) {
   .footer {
     grid-template-columns: 1fr;
-    gap: 60px;
   }
 }

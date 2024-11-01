@@ -1,0 +1,37 @@
+.feedback-bg {
+  background: var(--cor-0);
+}
+
+.feedback {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#feedback .feedback {
+  padding-top: 0px;
+}
+
+.feedback h2 {
+  grid-column: 1/-1;
+}
+
+.feedback-item {
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.feedback-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .feedback {
+    grid-template-columns: 1fr;
+  }
+}

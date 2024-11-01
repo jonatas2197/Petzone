@@ -47,9 +47,6 @@ html {
   .header-menu {
     gap: 20px;
   }
-  .header-menu a:hover {
-    background-color: var(--cor-10);
-  }
   .header a:after {
     display: none;
   }
